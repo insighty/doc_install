@@ -12,6 +12,9 @@ sudo yum remove docker \
                   docker-selinux \
                   docker-engine-selinux \
                   docker-engine
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
 
 sudo yum-config-manager \
     --add-repo \
